@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 
+require "simplecov"
+
+SimpleCov.start do
+  enable_coverage :branch
+end
+
 require "semantic_release"
 
 RSpec.configure do |config|
@@ -13,3 +19,5 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+RSpec::Matchers.define_negated_matcher :not_change, :change
