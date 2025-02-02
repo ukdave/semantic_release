@@ -1,5 +1,2 @@
-## [Unreleased]
-
-## [0.1.0] - 2025-01-28
-
+## 1.0.0 (02 February 2025)
 - Initial release
