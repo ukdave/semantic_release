@@ -1,28 +1,58 @@
 # SemanticRelease
 
-TODO: Delete this and the text below, and describe your gem
+This gem helps you to manage the version number of your application or library.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/semantic_release`. To experiment with that code, run `bin/console` for an interactive prompt.
+Use the provided Rake tasks to:
+
+- bump the major, minor, or patch number of your version
+- automatically update our verison file (e.g. `lib/version.rb`)
+- automatically update your changelog (`CHANGELOG.md` or `history.rdoc`)
+- automatically create a git commit and tag for the release
+
+This gem was inspired by:
+
+- SemVer2 (https://github.com/haf/semver)
+- Rake-n-Bake (https://github.com/RichardVickerstaff/rake-n-bake)
+- Version Manager (https://github.com/tpbowden/version_manager)
 
 ## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
 
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle add semantic_release
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+gem install semantic_release
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the Rake task by adding the following lines to a Rake configuration file (e.g. `Rakefile` or `lib/tasks/default.rake`):
+
+```ruby
+require "semantic_release/rake_task"
+SemanticRelease::RakeTask.new
+```
+
+The following tasks are available:
+
+```
+rake semantic_release:init
+rake semantic_release:current
+rake semantic_release:major
+rake semantic_release:minor
+rake semantic_release:patch
+```
+
+To get the current version inside your application:
+
+```ruby
+SemanticRelease.current_version
+```
 
 ## Development
 
