@@ -18,7 +18,7 @@ module SemanticRelease
         heading_marker = filepath.end_with?(".rdoc") ? "==" : "##"
         content = File.read(filepath)
         File.open(filepath, "w") do |f|
-          f.puts("#{heading_marker} #{current_version} (#{Time.now.strftime("%d %B %Y")})\n")
+          f.puts("#{heading_marker} #{current_version} (#{Time.now.strftime("%d %B %Y")})\n\n")
           f.print(content)
         end
       end
