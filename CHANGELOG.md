@@ -1,3 +1,5 @@
+## 1.1.0 (03 February 2025)
+
 - Add check to prevent re-initialising if semver file already exists
 - Add configuration options for semver file
 - Change rake task namespace from `semantic_release` to `release` and make configurable
