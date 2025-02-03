@@ -5,7 +5,7 @@ This gem helps you to manage the version number of your application or library.
 Use the provided Rake tasks to:
 
 - bump the major, minor, or patch number of your version
-- automatically update our verison file (e.g. `lib/version.rb`)
+- automatically update your version file (e.g. `lib/version.rb`)
 - automatically update your changelog (`CHANGELOG.md` or `history.rdoc`)
 - automatically create a git commit and tag for the release
 
@@ -41,11 +41,11 @@ SemanticRelease::RakeTask.new
 The following tasks are available:
 
 ```
-rake semantic_release:init
-rake semantic_release:current
-rake semantic_release:major
-rake semantic_release:minor
-rake semantic_release:patch
+rake release:init
+rake release:current
+rake release:major
+rake release:minor
+rake release:patch
 ```
 
 To get the current version inside your application:

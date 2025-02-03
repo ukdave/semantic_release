@@ -6,10 +6,10 @@ require "semantic_release"
 module SemanticRelease
   class RakeTask < Rake::TaskLib
     # rubocop:disable Metrics/MethodLength
-    def initialize
-      super
+    def initialize(name = :release)
+      super()
 
-      namespace :semantic_release do
+      namespace name do
         desc "Initialise version file"
         task :init do
           SemanticRelease.init
