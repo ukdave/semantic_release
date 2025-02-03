@@ -38,6 +38,15 @@ require "semantic_release/rake_task"
 SemanticRelease::RakeTask.new
 ```
 
+The name rake tasks and other options are configurable like so:
+
+```ruby
+require "semantic_release/rake_task"
+SemanticRelease::RakeTask.new(:semver) do |config|
+  config.semver_file = "semver.json"
+end
+```
+
 The following tasks are available:
 
 ```

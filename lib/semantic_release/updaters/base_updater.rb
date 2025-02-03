@@ -12,7 +12,7 @@ module SemanticRelease
       end
 
       def self.semver_file
-        SemanticRelease::SEMVER_FILE
+        SemanticRelease.configuration.semver_file
       end
     end
   end
