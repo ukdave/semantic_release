@@ -1,5 +1,9 @@
 # SemanticRelease
 
+[![Build Status](https://github.com/ukdave/semantic_release/actions/workflows/main.yml/badge.svg)](https://github.com/ukdave/semantic_release/actions/workflows/main.yml)
+[![Release](https://img.shields.io/github/v/release/ukdave/semantic_release)](https://github.com/ukdave/semantic_release/releases)
+[![License](https://img.shields.io/github/license/ukdave/semantic_release)](https://github.com/ukdave/semantic_release/blob/main/LICENSE.txt)
+
 This gem helps you to manage the version number of your application or library.
 
 Use the provided Rake tasks to:
