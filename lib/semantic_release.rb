@@ -13,6 +13,8 @@ module SemanticRelease
   end
 
   def self.init
+    raise Error, "#{configuration.semver_file} already exists" if File.exist?(configuration.semver_file)
+
     version = Semver.new
     version.save(configuration.semver_file)
   end
