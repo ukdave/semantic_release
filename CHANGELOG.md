@@ -1,3 +1,5 @@
+- feat: Stage Gemfile.lock after bumping version.rb if a gemspec file is present
+
 ## 1.1.0 (03 February 2025)
 
 - Add check to prevent re-initialising if semver file already exists

@@ -47,6 +47,7 @@ module SemanticRelease
   def self.release
     Updaters::Changelog.update
     Updaters::VersionRb.update
+    Updaters::GemfileLock.update
     Updaters::GitTag.update
   end
 end
