@@ -73,7 +73,9 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
-To release a new version, run `bundle exec rake semver:XXX` (replacing `XXX` with `major` or `minor` or `patch`), which will bump the version number and create a git tag for the version. Then run `bundle exec rake release`, which will push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To release a new version, run `bundle exec rake semver:XXX` (replacing `XXX` with `major` or `minor` or `patch`), which will bump the version number and create a git tag for the version. Then run `git push origin main --tags` to push the new tag.
+
+Then run `bundle exec rake release`, which will build and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
