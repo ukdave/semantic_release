@@ -4,7 +4,7 @@ module SemanticRelease
   module Updaters
     class GemfileLock < BaseUpdater
       def self.update
-        return if Dir.glob("*.gemspec").empty?
+        return unless gemspec_present?
         return if system("git check-ignore -q Gemfile.lock")
 
         `bundle check && git add Gemfile.lock`

@@ -11,6 +11,7 @@ module SemanticRelease
 
         branch = `git rev-parse --abbrev-ref HEAD`.chomp
         puts "To push the new tag, use 'git push origin #{branch} --tags'"
+        puts "OR to push the tag and .gem file to rubygems.org use, 'bundle exec rake release'" if gemspec_present?
       end
     end
   end

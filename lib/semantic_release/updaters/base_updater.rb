@@ -14,6 +14,10 @@ module SemanticRelease
       def self.semver_file
         SemanticRelease.configuration.semver_file
       end
+
+      def self.gemspec_present?
+        !Dir.glob("*.gemspec").empty?
+      end
     end
   end
 end

@@ -1,3 +1,4 @@
+- feat: Mention 'rake release' in git tag updater output if a gemspec file is present
 - feat: Stage Gemfile.lock after bumping version.rb if a gemspec file is present
 
 ## 1.1.0 (03 February 2025)
