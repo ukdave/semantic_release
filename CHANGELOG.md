@@ -1,5 +1,7 @@
 ## 1.2.1 (06 February 2025)
 
+- docs: Fix release instructions to clarify that you need to push the tag _and_ run `rake release`
+
 ## 1.2.0 (06 February 2025)
 
 - feat: Mention 'rake release' in git tag updater output if a gemspec file is present
