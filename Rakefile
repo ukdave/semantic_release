@@ -9,6 +9,6 @@ require "rubocop/rake_task"
 RuboCop::RakeTask.new
 
 require_relative "lib/semantic_release/rake_task"
-SemanticRelease::RakeTask.new
+SemanticRelease::RakeTask.new(:semver)
 
 task default: %i[spec rubocop]
