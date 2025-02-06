@@ -1,3 +1,5 @@
+- ci: Add rake_announcer gem
+
 ## 1.2.1 (06 February 2025)
 
 - docs: Fix release instructions to clarify that you need to push the tag _and_ run `rake release`
