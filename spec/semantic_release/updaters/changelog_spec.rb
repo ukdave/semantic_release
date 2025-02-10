@@ -27,7 +27,7 @@ RSpec.describe SemanticRelease::Updaters::Changelog do
       it "prepends the version" do
         described_class.update
         content = File.read("CHANGELOG.md")
-        expect(content).to eq("## 1.2.3 (#{Time.now.strftime("%d %B %Y")})\n\n" \
+        expect(content).to eq("## v1.2.3 (#{Time.now.strftime("%d %B %Y")})\n\n" \
                               "* Some changes")
       end
 
@@ -45,7 +45,7 @@ RSpec.describe SemanticRelease::Updaters::Changelog do
       it "prepends the version" do
         described_class.update
         content = File.read("history.rdoc")
-        expect(content).to eq("== 1.2.3 (#{Time.now.strftime("%d %B %Y")})\n\n" \
+        expect(content).to eq("== v1.2.3 (#{Time.now.strftime("%d %B %Y")})\n\n" \
                               "* Some changes")
       end
 

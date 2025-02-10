@@ -11,6 +11,10 @@ module SemanticRelease
         Semver.load(semver_file).to_s
       end
 
+      def self.current_version_tag
+        "v#{current_version}"
+      end
+
       def self.semver_file
         SemanticRelease.configuration.semver_file
       end

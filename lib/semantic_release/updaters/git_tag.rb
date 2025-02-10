@@ -4,8 +4,8 @@ module SemanticRelease
   module Updaters
     class GitTag < BaseUpdater
       def self.update
-        tag = "v#{current_version}"
-        msg = "Increment version to v#{current_version}"
+        tag = current_version_tag
+        msg = "Increment version to #{tag}"
 
         `git add #{semver_file} && git commit -m '#{msg}' && git tag #{tag} -a -m '#{Time.now}'`
 
