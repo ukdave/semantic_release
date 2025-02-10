@@ -48,6 +48,7 @@ The name of the rake task and other options are configurable like so:
 require "semantic_release/rake_task"
 SemanticRelease::RakeTask.new(:semver) do |config|
   config.semver_file = "semver.json"
+  config.disable_rubygems_message = true
 end
 ```
 

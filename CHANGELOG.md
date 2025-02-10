@@ -1,3 +1,4 @@
+- feat: Add config option to hide message about building and pushing the .gem file to rubygems.org
 - fix: Prefix version number in changelog files with 'v'
 - ci: Add rake_announcer gem
 
