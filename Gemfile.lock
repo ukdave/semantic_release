@@ -19,7 +19,7 @@ GEM
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
-    rake_announcer (1.0.0)
+    rake_announcer (1.1.0)
       rake (>= 13)
       term-ansicolor (~> 1.11)
     regexp_parser (2.10.0)
