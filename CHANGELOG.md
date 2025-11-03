@@ -1,3 +1,5 @@
+- feat: Drop support for Ruby 3.1 which has reached End of Life
+
 ## v1.3.0 (10 February 2025)
 
 - feat: Add config option to hide message about building and pushing the .gem file to rubygems.org
