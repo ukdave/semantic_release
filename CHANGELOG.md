@@ -1,3 +1,4 @@
+- chore: Update development dependencies
 - feat: Drop support for Ruby 3.1 which has reached End of Life
 
 ## v1.3.0 (10 February 2025)
