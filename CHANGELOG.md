@@ -1,3 +1,4 @@
+- ci: Bump actions/checkout from 4 to 5
 - chore: Update development dependencies
 - feat: Drop support for Ruby 3.1 which has reached End of Life
 
