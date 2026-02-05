@@ -1,4 +1,6 @@
-name: Ruby
+name: Build
+permissions:
+  contents: read
 
 on:
   push:
