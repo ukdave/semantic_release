@@ -19,6 +19,8 @@ This gem was inspired by:
 - Rake-n-Bake (https://github.com/RichardVickerstaff/rake-n-bake)
 - Version Manager (https://github.com/tpbowden/version_manager)
 
+![Screenshot](screenshot.png?raw=true "Screenshot")
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
