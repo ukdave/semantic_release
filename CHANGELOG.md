@@ -1,3 +1,5 @@
+## v1.5.0 (19 November 2026)
+
 - feat: Drop support for Ruby 3.2 which has reached End of Life
 - chore: Update development dependencies
 
