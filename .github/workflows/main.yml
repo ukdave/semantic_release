@@ -19,7 +19,7 @@ jobs:
           - '3.2.11'
           - '3.3.11'
           - '3.4.9'
-          - '4.0.5'
+          - '4.0.10'
 
     steps:
       - uses: actions/checkout@v5
