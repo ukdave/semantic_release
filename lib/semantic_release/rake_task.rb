@@ -5,7 +5,7 @@ require "semantic_release"
 
 module SemanticRelease
   class RakeTask < Rake::TaskLib
-    # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+    # rubocop:disable-next Metrics/AbcSize, Metrics/MethodLength
     def initialize(name = :release)
       super()
 
@@ -38,6 +38,5 @@ module SemanticRelease
         end
       end
     end
-    # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
   end
 end

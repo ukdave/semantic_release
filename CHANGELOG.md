@@ -1,3 +1,5 @@
+- chore: Update development dependencies
+
 ## v1.4.0 (03 November 2025)
 
 - ci: Bump actions/checkout from 4 to 5

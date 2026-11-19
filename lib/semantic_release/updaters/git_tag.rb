@@ -3,7 +3,7 @@
 module SemanticRelease
   module Updaters
     class GitTag < BaseUpdater
-      # rubocop:disable Style/GuardClause
+      # rubocop:disable-next Style/GuardClause
       def self.update
         tag = current_version_tag
         msg = "Increment version to #{tag}"
@@ -17,7 +17,6 @@ module SemanticRelease
           puts "To build and push the .gem file to rubygems.org use, 'bundle exec rake release'"
         end
       end
-      # rubocop:enable Style/GuardClause
     end
   end
 end

@@ -84,7 +84,7 @@ RSpec.describe SemanticRelease::Semver do
       expect(v1).not_to eq(v2)
     end
 
-    # rubocop:disable RSpec/ExampleLength
+    # rubocop:disable-next RSpec/ExampleLength
     it "compares against another version" do
       semvers = [
         described_class.new(major: 0, minor: 1, patch: 0),
@@ -96,6 +96,5 @@ RSpec.describe SemanticRelease::Semver do
         expect(v1).to be < v2
       end
     end
-    # rubocop:enable RSpec/ExampleLength
   end
 end
