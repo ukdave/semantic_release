@@ -1,3 +1,4 @@
+- feat: Drop support for Ruby 3.2 which has reached End of Life
 - chore: Update development dependencies
 
 ## v1.4.0 (03 November 2025)
